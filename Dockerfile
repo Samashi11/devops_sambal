@@ -1,6 +1,6 @@
 FROM php:8.2-fpm
 
-# Install dependencies
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -9,10 +9,8 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     zip \
     unzip \
-    nginx
-
-# Clear cache
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+    nginx \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install PHP extensions
 RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
@@ -23,14 +21,20 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy project files
-COPY . /var/www/html
+# Copy composer files dari folder src
+COPY src/composer.json src/composer.lock* ./
+
+# Install dependencies
+RUN composer install --no-dev --no-scripts --no-autoloader --no-interaction
+
+# Copy semua file dari folder src
+COPY src/ /var/www/html/
+
+# Generate autoload
+RUN composer dump-autoload --optimize --no-dev
 
 # Copy nginx config
 COPY docker/nginx/default.conf /etc/nginx/sites-available/default
-
-# Install dependencies
-RUN composer install --no-dev --optimize-autoloader --no-interaction
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
