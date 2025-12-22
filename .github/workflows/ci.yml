@@ -39,20 +39,20 @@ jobs:
           sleep 15
           
           echo "📦 Installing Composer dependencies..."
-          docker compose exec -T app composer install --no-dev --optimize-autoloader --no-interaction
+          docker exec -it laravel_app composer install --no-dev --optimize-autoloader --no-interaction
           
           echo "🔄 Running Laravel migrations..."
-          docker compose exec -T app php artisan migrate --force
+          docker exec -it laravel_app php artisan migrate --force
           
           echo "⚡ Optimizing Laravel..."
-          docker compose exec -T app php artisan config:cache
-          docker compose exec -T app php artisan route:cache
-          docker compose exec -T app php artisan view:cache
-          docker compose exec -T app php artisan optimize
+          docker exec -it laravel_app php artisan config:cache
+          docker exec -it laravel_app php artisan route:cache
+          docker exec -it laravel_app php artisan view:cache
+          docker exec -it laravel_app php artisan optimize
           
           echo "🔐 Setting permissions..."
-          docker compose exec -T app chown -R www-data:www-data /var/www/html/storage
-          docker compose exec -T app chown -R www-data:www-data /var/www/html/bootstrap/cache
+          docker exec -it laravel_app chown -R www-data:www-data /var/www/html/storage
+          docker exec -it laravel_app chown -R www-data:www-data /var/www/html/bootstrap/cache
           
           echo "✅ Deployment completed successfully!"
           
@@ -60,7 +60,7 @@ jobs:
       if: success()
       run: |
         echo "🎉 Deployment to VPS successful!"
-        echo "🌐 Access your app at: http://${{ secrets.VPS_HOST }}: 8080"
+        echo "🌐 Access your app at: http://${{ secrets.VPS_HOST }}: 8728"
         
     - name: Deployment Failed
       if: failure()
