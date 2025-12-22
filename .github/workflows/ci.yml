@@ -1,30 +1,53 @@
-name: CI DevSecOps Pipeline
+name: Deploy to VPS
 
 on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+  push: 
+    branches: 
+      - main
+  workflow_dispatch:  # Bisa trigger manual
 
 jobs:
-  build-and-scan:
+  deploy: 
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v4
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Build Docker image
-        run: |
-          docker build -t devops_sambal:ci .
-
-      - name: Scan dependencies (Trivy)
-        uses: aquasecurity/trivy-action@0.20.0
-        with:
-          image-ref: devops_sambal:ci
-          format: table
-          exit-code: 1
-          severity: HIGH,CRITICAL
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Deploy to VPS
+      uses: appleboy/ssh-action@master
+      with:
+        host:  ${{ secrets.VPS_HOST }}
+        username: ${{ secrets.VPS_USERNAME }}
+        key: ${{ secrets.VPS_SSH_KEY }}
+        script: |
+          cd ${{ secrets.VPS_PATH }}
+          
+          # Pull latest code
+          git pull origin main
+          
+          # Stop containers
+          docker-compose down
+          
+          # Remove old images
+          docker image prune -f
+          
+          # Build and start
+          docker-compose up -d --build
+          
+          # Wait for containers to be ready
+          sleep 10
+          
+          # Run Laravel commands
+          docker-compose exec -T app php artisan migrate --force
+          docker-compose exec -T app php artisan config:cache
+          docker-compose exec -T app php artisan route:cache
+          docker-compose exec -T app php artisan view:cache
+          
+          # Fix permissions
+          docker-compose exec -T app chown -R www-data:www-data /var/www/html/storage
+          docker-compose exec -T app chown -R www-data:www-data /var/www/html/bootstrap/cache
+          
+    - name:  Deployment Status
+      if: success()
+      run: echo "✅ Deployment successful!"
