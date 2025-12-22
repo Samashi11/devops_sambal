@@ -27,27 +27,27 @@ jobs:
           git pull origin main
           
           # Stop containers
-          docker-compose down
+          docker compose down
           
           # Remove old images
           docker image prune -f
           
           # Build and start
-          docker-compose up -d --build
+          docker compose up -d --build
           
           # Wait for containers
           sleep 10
           
           # Run Laravel commands (semua command Laravel ada di folder src)
-          docker-compose exec -T app php artisan migrate --force
-          docker-compose exec -T app php artisan config:cache
-          docker-compose exec -T app php artisan route:cache
-          docker-compose exec -T app php artisan view:cache
-          docker-compose exec -T app php artisan optimize
+          docker compose exec -T app php artisan migrate --force
+          docker compose exec -T app php artisan config:cache
+          docker compose exec -T app php artisan route:cache
+          docker compose exec -T app php artisan view:cache
+          docker compose exec -T app php artisan optimize
           
           # Fix permissions
-          docker-compose exec -T app chown -R www-data:www-data /var/www/html/storage
-          docker-compose exec -T app chown -R www-data: www-data /var/www/html/bootstrap/cache
+          docker compose exec -T app chown -R www-data:www-data /var/www/html/storage
+          docker compose exec -T app chown -R www-data: www-data /var/www/html/bootstrap/cache
           
     - name: Deployment Status
       if: success()
