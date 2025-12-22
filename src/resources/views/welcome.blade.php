@@ -131,7 +131,7 @@
                                     </h1>
                                     <h2 class="text-gray-300 text-lg font-normal leading-relaxed max-w-lg mx-auto">
                                         Transforming the mundane into the magnificent. We craft web experiences that
-                                        feel less like technology and more like magic. Eakkkkkkk
+                                        feel less like technology and more like magic Soempurnan.
                                     </h2>
                                 </div>
                                 <div class="flex flex-col sm:flex-row gap-4 z-10 mt-4">
