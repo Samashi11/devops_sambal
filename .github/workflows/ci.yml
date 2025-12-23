@@ -43,6 +43,7 @@ jobs:
           
           echo "🔄 Running Laravel migrations..."
           docker exec -it laravel_app php artisan migrate --force
+          docker exec -it laravel_app php artisan key:generate
           
           echo "⚡ Optimizing Laravel..."
           docker exec -it laravel_app php artisan config:cache
@@ -60,7 +61,6 @@ jobs:
       if: success()
       run: |
         echo "🎉 Deployment to VPS successful!"
-        echo "🌐 Access your app at: http://${{ secrets.VPS_HOST }}: 8728"
         
     - name: Deployment Failed
       if: failure()
