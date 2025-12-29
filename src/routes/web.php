@@ -6,8 +6,16 @@ Route::get('/', function () {
     return view('welcome')->name('home');
 });
 
-// Route::get('/health', fn() => response()->json(['status' => 'ok']));
+Route::get('/health', function () {
+    return response()->json(['status' => 'OK'], 200);
+})->name('health');
 
-Route::get('/about', fn() => view('about'))->name('about');
-Route::get('/products', fn() => view('products'))->name('products');
-Route::get('/contact', fn() => view('contact'))->name('contact');
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+Route::get('/products', function () {
+    return view('products');
+})->name('products');
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
