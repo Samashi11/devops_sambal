@@ -149,7 +149,7 @@
                         </div>
                         <div>
                             <p class="text-white text-lg font-bold leading-normal flex items-center gap-2">
-                                Julian V.
+                                M. Mahardika
                             </p>
                             <p class="text-secondary-text text-sm font-medium uppercase tracking-wide">Master Formulator
                             </p>
@@ -167,7 +167,7 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-white text-lg font-bold leading-normal">Marcus T.</p>
+                            <p class="text-white text-lg font-bold leading-normal">Salman M.A.</p>
                             <p class="text-secondary-text text-sm font-medium uppercase tracking-wide">Brand Sorcerer
                             </p>
                         </div>
@@ -184,7 +184,7 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-white text-lg font-bold leading-normal">Silas B.</p>
+                            <p class="text-white text-lg font-bold leading-normal">Ghozi</p>
                             <p class="text-secondary-text text-sm font-medium uppercase tracking-wide">Chief Alchemist
                             </p>
                         </div>
@@ -201,7 +201,7 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-white text-lg font-bold leading-normal">Damien R.</p>
+                            <p class="text-white text-lg font-bold leading-normal">Fadil</p>
                             <p class="text-secondary-text text-sm font-medium uppercase tracking-wide">Visual Mage</p>
                         </div>
                     </div>
@@ -217,7 +217,7 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-white text-lg font-bold leading-normal">Victor K.</p>
+                            <p class="text-white text-lg font-bold leading-normal">Reyhan</p>
                             <p class="text-secondary-text text-sm font-medium uppercase tracking-wide">Shadow Operations
                             </p>
                         </div>
