@@ -33,19 +33,18 @@ jobs:
 
             sleep 15
 
-            docker exec -it laravel_app composer install --no-dev --optimize-autoloader --no-interaction
+            docker exec -i laravel_app composer install --no-dev --optimize-autoloader --no-interaction
 
-            docker exec -it laravel_app php artisan migrate --force
-            docker exec -it laravel_app php artisan key:generate
+            docker exec -i laravel_app php artisan migrate --force
+            docker exec -i laravel_app php artisan key:generate
 
-            docker exec -it laravel_app php artisan config:cache
-            docker exec -it laravel_app php artisan route:cache
-            docker exec -it laravel_app php artisan view:cache
-            docker exec -it laravel_app php artisan optimize
+            docker exec -i laravel_app php artisan config:cache
+            docker exec -i laravel_app php artisan route:cache
+            docker exec -i laravel_app php artisan view:cache
+            docker exec -i laravel_app php artisan optimize
 
-            docker exec -it laravel_app chown -R www-data:www-data /var/www/html/storage
-            docker exec -it laravel_app chown -R www-data:www-data /var/www/html/bootstrap/cache
-
+            docker exec -i laravel_app chown -R www-data:www-data /var/www/html/storage
+            docker exec -i laravel_app chown -R www-data:www-data /var/www/html/bootstrap/cache
       - name: Deployment Success
         if: success()
         run: |
