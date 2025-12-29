@@ -78,15 +78,15 @@
                             <div class="flex flex-1 justify-end gap-8 items-center">
                                 <div class="hidden md:flex items-center gap-9">
                                     <a class="text-gray-300 hover:text-primary transition-colors text-sm font-medium leading-normal"
-                                        href="#">Shop</a>
+                                        href="{{ route('products') }}">Shop</a>
                                     <a class="text-gray-300 hover:text-primary transition-colors text-sm font-medium leading-normal"
-                                        href="#">Rituals</a>
+                                        href="{{ route('about') }}">About Us</a>
                                     <a class="text-gray-300 hover:text-primary transition-colors text-sm font-medium leading-normal"
-                                        href="#">Contact</a>
+                                        href="{{ route('contact') }}">Contact</a>
                                 </div>
                                 <button
                                     class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary/90 transition-all text-white text-sm font-bold leading-normal tracking-[0.015em] shadow-[0_0_15px_rgba(147,17,212,0.4)]">
-                                    <span class="truncate">Shop Elixirs</span>
+                                    <span class="truncate">Shop Collection</span>
                                 </button>
                             </div>
                         </header>
@@ -128,12 +128,8 @@
                                 </div>
                                 <div class="flex flex-col sm:flex-row gap-4 z-10 mt-4">
                                     <button
-                                        class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary hover:bg-primary/90 hover:scale-105 transition-all text-white text-base font-bold leading-normal tracking-[0.015em] shadow-[0_0_20px_rgba(147,17,212,0.5)]">
+                                        class="flex min-w-[320px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary hover:bg-primary/90 hover:scale-105 transition-all text-white text-base font-bold leading-normal tracking-[0.015em] shadow-[0_0_20px_rgba(147,17,212,0.5)]">
                                         <span class="truncate">Shop Collection</span>
-                                    </button>
-                                    <button
-                                        class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-transparent border border-[#4b3b54] hover:bg-[#332839] hover:border-primary/50 transition-all text-white text-base font-bold leading-normal tracking-[0.015em]">
-                                        <span class="truncate">Discover Rituals</span>
                                     </button>
                                 </div>
                             </div>
