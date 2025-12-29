@@ -1,68 +1,57 @@
 name: Deploy to VPS
 
-on:  
+on:
   push:
-    branches:   
+    branches:
       - main
   workflow_dispatch:
 
 jobs:
   deploy:
-    runs-on:   ubuntu-latest
-    
-    steps: 
-    - name:  Checkout code
-      uses:   actions/checkout@v4
-      
-    - name: Deploy to VPS via SSH
-      uses:  appleboy/ssh-action@master
-      with:
-        host:   ${{ secrets.VPS_HOST }}
-        username:  ${{ secrets.VPS_USERNAME }}
-        key:  ${{ secrets.VPS_SSH_KEY }}
-        script: |
-          cd ${{ secrets.VPS_PATH }}
-          
-          echo "📥 Pulling latest code from GitHub..."
-          git pull origin main
-          
-          echo "🛑 Stopping containers..."
-          docker compose down
-          
-          echo "🧹 Cleaning old images..."
-          docker image prune -f
-          
-          echo "🔨 Building and starting containers..."
-          docker compose up -d --build
-          
-          echo "⏳ Waiting for containers to be ready..."
-          sleep 15
-          
-          echo "📦 Installing Composer dependencies..."
-          docker exec -it laravel_app composer install --no-dev --optimize-autoloader --no-interaction
-          
-          echo "🔄 Running Laravel migrations..."
-          docker exec -it laravel_app php artisan migrate --force
-          docker exec -it laravel_app php artisan key:generate
-          
-          echo "⚡ Optimizing Laravel..."
-          docker exec -it laravel_app php artisan config:cache
-          docker exec -it laravel_app php artisan route:cache
-          docker exec -it laravel_app php artisan view:cache
-          docker exec -it laravel_app php artisan optimize
-          
-          echo "🔐 Setting permissions..."
-          docker exec -it laravel_app chown -R www-data:www-data /var/www/html/storage
-          docker exec -it laravel_app chown -R www-data:www-data /var/www/html/bootstrap/cache
-          
-          echo "✅ Deployment completed successfully!"
-          
-    - name:  Deployment Success
-      if: success()
-      run: |
-        echo "🎉 Deployment to VPS successful!"
-        
-    - name: Deployment Failed
-      if: failure()
-      run: |
-        echo "❌ Deployment failed!   Check the logs above."
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to VPS via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            cd ${{ secrets.VPS_PATH }}
+
+            git pull origin main
+
+            docker compose down
+
+            docker image prune -f
+
+            docker compose up -d --build
+
+            sleep 15
+
+            docker exec -it laravel_app composer install --no-dev --optimize-autoloader --no-interaction
+
+            docker exec -it laravel_app php artisan migrate --force
+            docker exec -it laravel_app php artisan key:generate
+
+            docker exec -it laravel_app php artisan config:cache
+            docker exec -it laravel_app php artisan route:cache
+            docker exec -it laravel_app php artisan view:cache
+            docker exec -it laravel_app php artisan optimize
+
+            docker exec -it laravel_app chown -R www-data:www-data /var/www/html/storage
+            docker exec -it laravel_app chown -R www-data:www-data /var/www/html/bootstrap/cache
+
+      - name: Deployment Success
+        if: success()
+        run: |
+          echo "🎉 Deployment to VPS successful!"
+
+      - name: Deployment Failed
+        if: failure()
+        run: |
+          echo "❌ Deployment failed!   Check the logs above."
