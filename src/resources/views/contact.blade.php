@@ -76,7 +76,7 @@
         <div class="flex flex-1 justify-end gap-8">
             <div class="hidden md:flex items-center gap-9">
                 <a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
-                    href="{{ route('home') }}">Home</a>
+                    href="{{ url('/') }}">Home</a>
                 <a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
                     href="{{ route('products') }}">Shop</a>
                 <a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
