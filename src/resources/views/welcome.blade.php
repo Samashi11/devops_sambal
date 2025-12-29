@@ -119,7 +119,7 @@
                                     </div>
                                     <h1
                                         class="text-white text-5xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl glow-text">
-                                        Unleash Your Darkest Glow
+                                        Lepaskan Cahaya Gelapmu
                                     </h1>
                                     <h2 class="text-gray-300 text-lg font-normal leading-relaxed max-w-lg mx-auto">
                                         Transform your daily routine into a ritual of power. Premium skincare and
