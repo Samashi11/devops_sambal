@@ -59,7 +59,7 @@
         class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-surface-border bg-background-dark/95 backdrop-blur-md px-4 py-3 md:px-10">
         <div class="flex items-center gap-4 text-white">
             <div class="size-6 text-primary">
-                <span class="material-symbols-outlined text-3xl">raven</span>
+                <span class="material-symbols-outlined text-3xl">auto_fix_high</span>
             </div>
             <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] hidden sm:block">Dark Mage</h2>
         </div>
@@ -89,58 +89,50 @@
             </div>
         </div>
     </header>
-    <!-- Main Content Wrapper -->
     <div class="flex-1 flex flex-col max-w-[1440px] mx-auto w-full">
-        <!-- Hero Section (Condensed) -->
         <div class="px-4 py-6 md:px-10">
             <div class="relative w-full rounded-xl overflow-hidden min-h-[200px] md:min-h-[280px] flex items-center justify-center bg-cover bg-center"
                 data-alt="Dark misty smoke swirling around mysterious potion bottles"
                 style='background-image: linear-gradient(rgba(22, 17, 24, 0.4) 0%, rgba(22, 17, 24, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuA1JswVRywDTj-bwtdYLjiXDjSSn5rQ8P5TZzRiuP9LBSPD8Ufgm8qvDjgj64HqRCmE_MK1BA-bJj8XZHf651KWj5EocLvJ2sp2feaRQrViInWh4OuYPSE7GaCZUbQ46Shs9hWFQ_5o7zKFx_QvRY7sYLghYiLwY5n79XJfuyvqvJejI3ouhWN5JCqfJl9ie9kIa8BR0KklJ7G0Xa0UELdzbsik7YbeAZooYoSKn5ippbVwgT6k71cjImYU83EuID6Pw1m4Iy35CuOl");'>
                 <div class="relative z-10 text-center max-w-2xl px-4">
                     <h1 class="text-white text-3xl md:text-5xl font-black mb-3 tracking-tight">
-                        Potions for the Modern Man
+                        Ramuan untuk Pria Modern
                     </h1>
                     <p class="text-gray-200 text-sm md:text-base font-medium max-w-lg mx-auto">
-                        Alchemy for your skin. Discover our collection of enchanted grooming essentials.
+                        Alkimi untuk kulit Anda. Temukan koleksi perawatan esensial kami yang memikat.
                     </p>
                 </div>
             </div>
         </div>
-        <!-- Shop Layout: Sidebar + Grid -->
         <div class="flex flex-col lg:flex-row gap-8 px-4 md:px-10 py-6">
-            <!-- Sidebar (Filters) -->
             <aside class="w-full lg:w-64 shrink-0 space-y-8">
-                <!-- Search within Shop -->
                 <div class="relative">
                     <input
                         class="w-full h-10 pl-10 pr-4 rounded-lg bg-surface-border border-none text-white text-sm placeholder-gray-400 focus:ring-1 focus:ring-primary"
-                        placeholder="Search potions..." type="text" />
+                        placeholder="Cari ramuan..." type="text" />
                     <span
                         class="material-symbols-outlined absolute left-3 top-2.5 text-gray-400 text-[20px]">search</span>
                 </div>
-                <!-- Categories -->
                 <div>
-                    <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Categories</h3>
+                    <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Kategori</h3>
                     <div class="flex flex-wrap gap-2">
                         <button
-                            class="px-3 py-1.5 rounded-lg bg-primary text-white text-sm font-medium hover:opacity-90 transition">All</button>
+                            class="px-3 py-1.5 rounded-lg bg-primary text-white text-sm font-medium hover:opacity-90 transition">Semua</button>
                         <button
-                            class="px-3 py-1.5 rounded-lg bg-surface-border text-gray-300 text-sm font-medium hover:bg-surface-border/70 hover:text-white transition">Face</button>
+                            class="px-3 py-1.5 rounded-lg bg-surface-border text-gray-300 text-sm font-medium hover:bg-surface-border/70 hover:text-white transition">Wajah</button>
                         <button
-                            class="px-3 py-1.5 rounded-lg bg-surface-border text-gray-300 text-sm font-medium hover:bg-surface-border/70 hover:text-white transition">Beard</button>
+                            class="px-3 py-1.5 rounded-lg bg-surface-border text-gray-300 text-sm font-medium hover:bg-surface-border/70 hover:text-white transition">Jenggot</button>
                         <button
-                            class="px-3 py-1.5 rounded-lg bg-surface-border text-gray-300 text-sm font-medium hover:bg-surface-border/70 hover:text-white transition">Body</button>
+                            class="px-3 py-1.5 rounded-lg bg-surface-border text-gray-300 text-sm font-medium hover:bg-surface-border/70 hover:text-white transition">Tubuh</button>
                         <button
-                            class="px-3 py-1.5 rounded-lg bg-surface-border text-gray-300 text-sm font-medium hover:bg-surface-border/70 hover:text-white transition">Sets</button>
+                            class="px-3 py-1.5 rounded-lg bg-surface-border text-gray-300 text-sm font-medium hover:bg-surface-border/70 hover:text-white transition">Set</button>
                     </div>
                 </div>
-                <!-- Price Slider -->
                 <div>
-                    <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Price Range</h3>
+                    <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Rentang Harga</h3>
                     <div class="flex h-[38px] w-full pt-1.5 relative">
                         <div class="absolute w-full h-1 bg-surface-border rounded-full top-[11px]"></div>
                         <div class="absolute h-1 bg-primary rounded-full top-[11px] left-[15%] right-[30%]"></div>
-                        <!-- Thumb 1 -->
                         <div
                             class="absolute left-[15%] top-0 flex flex-col items-center -translate-x-1/2 cursor-pointer group">
                             <div
@@ -148,7 +140,6 @@
                             </div>
                             <span class="mt-1 text-xs text-gray-300 font-medium">$15</span>
                         </div>
-                        <!-- Thumb 2 -->
                         <div
                             class="absolute right-[30%] top-0 flex flex-col items-center translate-x-1/2 cursor-pointer group">
                             <div
@@ -158,52 +149,46 @@
                         </div>
                     </div>
                 </div>
-                <!-- Filters Checklist -->
                 <div>
-                    <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Skin Type</h3>
+                    <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Jenis Kulit</h3>
                     <div class="space-y-3">
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <div
                                 class="size-4 rounded border border-gray-500 bg-transparent flex items-center justify-center group-hover:border-primary transition-colors">
-                                <!-- Checked state would have a checkmark here -->
                             </div>
-                            <span class="text-sm text-gray-300 group-hover:text-white">Oily Skin</span>
+                            <span class="text-sm text-gray-300 group-hover:text-white">Kulit Berminyak</span>
                         </label>
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <div
                                 class="size-4 rounded border border-primary bg-primary flex items-center justify-center">
                                 <span class="material-symbols-outlined text-white text-[14px]">check</span>
                             </div>
-                            <span class="text-sm text-white">Dry Skin</span>
+                            <span class="text-sm text-white">Kulit Kering</span>
                         </label>
                         <label class="flex items-center gap-3 cursor-pointer group">
                             <div
                                 class="size-4 rounded border border-gray-500 bg-transparent flex items-center justify-center group-hover:border-primary transition-colors">
                             </div>
-                            <span class="text-sm text-gray-300 group-hover:text-white">Combination</span>
+                            <span class="text-sm text-gray-300 group-hover:text-white">Kombinasi</span>
                         </label>
                     </div>
                 </div>
             </aside>
-            <!-- Product Grid -->
             <main class="flex-1">
-                <!-- Sorting & Count Header -->
                 <div class="flex items-center justify-between mb-6">
-                    <p class="text-gray-400 text-sm">Showing 6 potions</p>
+                    <p class="text-gray-400 text-sm">Menampilkan 6 ramuan</p>
                     <div class="flex items-center gap-2">
-                        <span class="text-sm text-gray-400">Sort by:</span>
+                        <span class="text-sm text-gray-400">Urutkan:</span>
                         <select
                             class="bg-surface-border border-none text-white text-sm rounded px-3 py-1.5 focus:ring-1 focus:ring-primary cursor-pointer">
-                            <option>Most Potent (Popular)</option>
-                            <option>Price: Low to High</option>
-                            <option>Price: High to Low</option>
-                            <option>Newest Arrivals</option>
+                            <option>Paling Ampuh (Populer)</option>
+                            <option>Harga: Rendah ke Tinggi</option>
+                            <option>Harga: Tinggi ke Rendah</option>
+                            <option>Terbaru</option>
                         </select>
                     </div>
                 </div>
-                <!-- Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-                    <!-- Card 1 -->
                     <article
                         class="flex flex-col rounded-xl bg-surface-dark overflow-hidden group hover:shadow-[0_0_25px_rgba(147,17,212,0.15)] hover:bg-[#2a222f] transition-all duration-300 border border-transparent hover:border-primary/20">
                         <div class="relative w-full aspect-[4/5] bg-surface-border overflow-hidden">
@@ -213,32 +198,30 @@
                             </div>
                             <div
                                 class="absolute top-3 left-3 bg-primary/90 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded">
-                                Best Seller</div>
-                            <!-- Quick Action Overlay -->
+                                Terlaris</div>
                             <div
                                 class="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex justify-center bg-gradient-to-t from-black/80 to-transparent">
                                 <button
-                                    class="bg-white text-black text-sm font-bold py-2 px-6 rounded-lg hover:bg-gray-200 transition-colors shadow-lg">Quick
-                                    View</button>
+                                    class="bg-white text-black text-sm font-bold py-2 px-6 rounded-lg hover:bg-gray-200 transition-colors shadow-lg">Lihat
+                                    Kilat</button>
                             </div>
                         </div>
                         <div class="p-4 flex flex-col flex-1 gap-2">
                             <div class="flex justify-between items-start">
-                                <h3 class="text-white text-lg font-bold leading-tight">Void Walker Facewash</h3>
+                                <h3 class="text-white text-lg font-bold leading-tight">Pembersih Wajah Void Walker</h3>
                                 <p class="text-white font-medium">$24.00</p>
                             </div>
-                            <p class="text-gray-400 text-sm line-clamp-2">Charcoal-infused cleanser that draws out
-                                impurities from the depths of your pores.</p>
+                            <p class="text-gray-400 text-sm line-clamp-2">Pembersih dengan arang aktif yang menarik
+                                kotoran dari kedalaman pori-pori Anda.</p>
                             <div class="mt-auto pt-4">
                                 <button
                                     class="w-full flex items-center justify-center gap-2 rounded-lg h-10 bg-primary hover:bg-primary/90 text-white text-sm font-bold transition-all active:scale-[0.98]">
                                     <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
-                                    Add to Grimoire
+                                    Tambahkan ke Grimoire
                                 </button>
                             </div>
                         </div>
                     </article>
-                    <!-- Card 2 -->
                     <article
                         class="flex flex-col rounded-xl bg-surface-dark overflow-hidden group hover:shadow-[0_0_25px_rgba(147,17,212,0.15)] hover:bg-[#2a222f] transition-all duration-300 border border-transparent hover:border-primary/20">
                         <div class="relative w-full aspect-[4/5] bg-surface-border overflow-hidden">
@@ -249,21 +232,20 @@
                         </div>
                         <div class="p-4 flex flex-col flex-1 gap-2">
                             <div class="flex justify-between items-start">
-                                <h3 class="text-white text-lg font-bold leading-tight">Arcane Mist Toner</h3>
+                                <h3 class="text-white text-lg font-bold leading-tight">Toner Arcane Mist</h3>
                                 <p class="text-white font-medium">$30.00</p>
                             </div>
-                            <p class="text-gray-400 text-sm line-clamp-2">Hydrating toner charged with aloe vera and
-                                witch hazel for instant revitalization.</p>
+                            <p class="text-gray-400 text-sm line-clamp-2">Toner pelembap yang diperkaya lidah buaya dan
+                                witch hazel untuk revitalisasi instan.</p>
                             <div class="mt-auto pt-4">
                                 <button
                                     class="w-full flex items-center justify-center gap-2 rounded-lg h-10 bg-surface-border hover:bg-surface-border/80 text-white text-sm font-bold transition-all active:scale-[0.98]">
                                     <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
-                                    Add to Grimoire
+                                    Tambahkan ke Grimoire
                                 </button>
                             </div>
                         </div>
                     </article>
-                    <!-- Card 3 -->
                     <article
                         class="flex flex-col rounded-xl bg-surface-dark overflow-hidden group hover:shadow-[0_0_25px_rgba(147,17,212,0.15)] hover:bg-[#2a222f] transition-all duration-300 border border-transparent hover:border-primary/20">
                         <div class="relative w-full aspect-[4/5] bg-surface-border overflow-hidden">
@@ -274,21 +256,20 @@
                         </div>
                         <div class="p-4 flex flex-col flex-1 gap-2">
                             <div class="flex justify-between items-start">
-                                <h3 class="text-white text-lg font-bold leading-tight">Shadow Beard Oil</h3>
+                                <h3 class="text-white text-lg font-bold leading-tight">Minyak Jenggot Shadow</h3>
                                 <p class="text-white font-medium">$18.00</p>
                             </div>
-                            <p class="text-gray-400 text-sm line-clamp-2">Tame the wildest beard with this blend of
-                                argan and jojoba oils. Woodsmoke scent.</p>
+                            <p class="text-gray-400 text-sm line-clamp-2">Jinakkan jenggot terliar dengan campuran
+                                minyak argan dan jojoba. Aroma asap kayu.</p>
                             <div class="mt-auto pt-4">
                                 <button
                                     class="w-full flex items-center justify-center gap-2 rounded-lg h-10 bg-surface-border hover:bg-surface-border/80 text-white text-sm font-bold transition-all active:scale-[0.98]">
                                     <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
-                                    Add to Grimoire
+                                    Tambahkan ke Grimoire
                                 </button>
                             </div>
                         </div>
                     </article>
-                    <!-- Card 4 -->
                     <article
                         class="flex flex-col rounded-xl bg-surface-dark overflow-hidden group hover:shadow-[0_0_25px_rgba(147,17,212,0.15)] hover:bg-[#2a222f] transition-all duration-300 border border-transparent hover:border-primary/20">
                         <div class="relative w-full aspect-[4/5] bg-surface-border overflow-hidden">
@@ -298,25 +279,24 @@
                             </div>
                             <div
                                 class="absolute top-3 left-3 bg-red-600/90 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded">
-                                Low Stock</div>
+                                Stok Terbatas</div>
                         </div>
                         <div class="p-4 flex flex-col flex-1 gap-2">
                             <div class="flex justify-between items-start">
-                                <h3 class="text-white text-lg font-bold leading-tight">Philosopher’s Exfoliator</h3>
+                                <h3 class="text-white text-lg font-bold leading-tight">Eksfoliator Philosopher</h3>
                                 <p class="text-white font-medium">$28.00</p>
                             </div>
-                            <p class="text-gray-400 text-sm line-clamp-2">Micro-crystals polish away dead skin cells to
-                                reveal the immortal youth beneath.</p>
+                            <p class="text-gray-400 text-sm line-clamp-2">Kristal mikro mengangkat sel kulit mati untuk
+                                mengungkap kemudaan abadi di bawahnya.</p>
                             <div class="mt-auto pt-4">
                                 <button
                                     class="w-full flex items-center justify-center gap-2 rounded-lg h-10 bg-surface-border hover:bg-surface-border/80 text-white text-sm font-bold transition-all active:scale-[0.98]">
                                     <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
-                                    Add to Grimoire
+                                    Tambahkan ke Grimoire
                                 </button>
                             </div>
                         </div>
                     </article>
-                    <!-- Card 5 -->
                     <article
                         class="flex flex-col rounded-xl bg-surface-dark overflow-hidden group hover:shadow-[0_0_25px_rgba(147,17,212,0.15)] hover:bg-[#2a222f] transition-all duration-300 border border-transparent hover:border-primary/20">
                         <div class="relative w-full aspect-[4/5] bg-surface-border overflow-hidden">
@@ -327,21 +307,20 @@
                         </div>
                         <div class="p-4 flex flex-col flex-1 gap-2">
                             <div class="flex justify-between items-start">
-                                <h3 class="text-white text-lg font-bold leading-tight">Nightshade Eye Serum</h3>
+                                <h3 class="text-white text-lg font-bold leading-tight">Serum Mata Nightshade</h3>
                                 <p class="text-white font-medium">$45.00</p>
                             </div>
-                            <p class="text-gray-400 text-sm line-clamp-2">Banish dark circles and signs of fatigue.
-                                Ideal for the sleepless mage.</p>
+                            <p class="text-gray-400 text-sm line-clamp-2">Hilangkan lingkaran hitam dan tanda
+                                kelelahan. Ideal untuk penyihir yang kurang tidur.</p>
                             <div class="mt-auto pt-4">
                                 <button
                                     class="w-full flex items-center justify-center gap-2 rounded-lg h-10 bg-surface-border hover:bg-surface-border/80 text-white text-sm font-bold transition-all active:scale-[0.98]">
                                     <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
-                                    Add to Grimoire
+                                    Tambahkan ke Grimoire
                                 </button>
                             </div>
                         </div>
                     </article>
-                    <!-- Card 6 -->
                     <article
                         class="flex flex-col rounded-xl bg-surface-dark overflow-hidden group hover:shadow-[0_0_25px_rgba(147,17,212,0.15)] hover:bg-[#2a222f] transition-all duration-300 border border-transparent hover:border-primary/20">
                         <div class="relative w-full aspect-[4/5] bg-surface-border overflow-hidden">
@@ -352,22 +331,21 @@
                         </div>
                         <div class="p-4 flex flex-col flex-1 gap-2">
                             <div class="flex justify-between items-start">
-                                <h3 class="text-white text-lg font-bold leading-tight">Ethereal Clay Pomade</h3>
+                                <h3 class="text-white text-lg font-bold leading-tight">Pomade Clay Ethereal</h3>
                                 <p class="text-white font-medium">$22.00</p>
                             </div>
-                            <p class="text-gray-400 text-sm line-clamp-2">Strong hold with a matte finish. Keeps style
-                                locked in through any spellcasting.</p>
+                            <p class="text-gray-400 text-sm line-clamp-2">Daya tahan kuat dengan hasil matte. Menjaga
+                                gaya tetap terkunci melalui mantra apa pun.</p>
                             <div class="mt-auto pt-4">
                                 <button
                                     class="w-full flex items-center justify-center gap-2 rounded-lg h-10 bg-surface-border hover:bg-surface-border/80 text-white text-sm font-bold transition-all active:scale-[0.98]">
                                     <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
-                                    Add to Grimoire
+                                    Tambahkan ke Grimoire
                                 </button>
                             </div>
                         </div>
                     </article>
                 </div>
-                <!-- Pagination -->
                 <div class="flex justify-center mt-12 gap-2">
                     <button
                         class="size-10 flex items-center justify-center rounded-lg bg-surface-border text-gray-400 hover:text-white transition-colors">
@@ -387,7 +365,6 @@
             </main>
         </div>
     </div>
-    <!-- Footer -->
     <footer class="bg-surface-dark border-t border-surface-border mt-12 py-12 px-4 md:px-10">
         <div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div class="col-span-1 md:col-span-1">
@@ -396,45 +373,46 @@
                     <h3 class="text-lg font-bold">Dark Mage</h3>
                 </div>
                 <p class="text-gray-400 text-sm leading-relaxed">
-                    Forged in shadow, refined by science. We provide the modern warlock with the tools to master his
-                    appearance.
+                    Ditempa dalam bayangan, disempurnakan oleh sains. Kami menyediakan alat bagi penyihir modern untuk
+                    menguasai penampilannya.
                 </p>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-4">Shop</h4>
+                <h4 class="text-white font-bold mb-4">Toko</h4>
                 <ul class="space-y-2 text-sm text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="#">All Products</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Face</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Beard &amp; Hair</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Body</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Semua Produk</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Wajah</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Jenggot &amp; Rambut</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Tubuh</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-4">Support</h4>
+                <h4 class="text-white font-bold mb-4">Bantuan</h4>
                 <ul class="space-y-2 text-sm text-gray-400">
-                    <li><a class="hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Pengiriman &amp;
+                            Pengembalian</a></li>
                     <li><a class="hover:text-primary transition-colors" href="#">FAQ</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Hubungi Kami</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-4">Join the Coven</h4>
-                <p class="text-gray-400 text-sm mb-4">Subscribe for exclusive spells and product drops.</p>
+                <h4 class="text-white font-bold mb-4">Bergabung dengan Coven</h4>
+                <p class="text-gray-400 text-sm mb-4">Berlangganan untuk mantra eksklusif dan peluncuran produk.</p>
                 <div class="flex gap-2">
                     <input
                         class="flex-1 rounded-lg bg-background-dark border border-surface-border text-white px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:outline-none"
-                        placeholder="Email address" type="email" />
+                        placeholder="Alamat email" type="email" />
                     <button
-                        class="bg-primary text-white rounded-lg px-4 py-2 text-sm font-bold hover:bg-primary/90 transition-colors">Join</button>
+                        class="bg-primary text-white rounded-lg px-4 py-2 text-sm font-bold hover:bg-primary/90 transition-colors">Gabung</button>
                 </div>
             </div>
         </div>
         <div
             class="max-w-[1440px] mx-auto pt-8 border-t border-surface-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-            <p>© 2023 Dark Mage Grooming Co. All rights reserved.</p>
+            <p>© 2023 Dark Mage Grooming Co. Hak cipta dilindungi undang-undang.</p>
             <div class="flex gap-6">
-                <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
-                <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                <a class="hover:text-white transition-colors" href="#">Kebijakan Privasi</a>
+                <a class="hover:text-white transition-colors" href="#">Syarat Layanan</a>
             </div>
         </div>
     </footer>
