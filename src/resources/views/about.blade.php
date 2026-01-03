@@ -71,7 +71,7 @@
                 <div class="flex items-center gap-4 text-[#111418] dark:text-white cursor-pointer">
                     <div class="size-8 flex items-center justify-center text-primary">
                         <!-- Logo Icon -->
-                        <span class="material-symbols-outlined !text-3xl">cruelty_free</span>
+                        <span class="material-symbols-outlined !text-3xl">auto_fix_high</span>
                     </div>
                     <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Dark Mage</h2>
                 </div>
@@ -95,7 +95,6 @@
             </div>
         </header>
         <main class="flex flex-col items-center justify-center w-full">
-            <!-- Hero Section / Company Summary -->
             <div class="w-full max-w-[960px] px-4 py-8 md:px-10 md:py-12">
                 <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-8 text-center relative overflow-hidden group shadow-2xl shadow-primary/10"
                     data-alt="Dark mysterious smoke texture background with purple ambient lighting"
@@ -108,35 +107,32 @@
                             <span class="text-xs font-bold uppercase tracking-wider text-white/90">Est. MMXXIII</span>
                         </div>
                         <h1 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
-                            The Art of Shadow &amp; Skin
+                            Seni Bayangan &amp; Kulit
                         </h1>
                         <h2 class="text-gray-200 text-base md:text-lg font-normal leading-relaxed">
-                            Dark Mage isn't just skincare; it's alchemy for the modern man. We blend ancient secrets
-                            with clinical science to banish the dullness of the everyday. Unlock your true face and step
-                            out of the shadows.
+                            Dark Mage bukan sekadar perawatan kulit; ini adalah alkimia untuk pria modern. Kami
+                            memadukan rahasia kuno dengan sains klinis untuk mengusir kusamnya keseharian. Buka wajah
+                            sejatimu dan melangkah keluar dari bayang-bayang.
                         </h2>
                     </div>
                     <div class="relative z-10 pt-4">
                         <button
                             class="flex items-center justify-center gap-2 rounded-lg h-12 px-6 bg-primary hover:bg-[#7a0eb0] transition-all text-white text-base font-bold tracking-[0.015em] shadow-lg shadow-primary/25">
-                            <span>Explore Our Story</span>
+                            <span>Jelajahi Kisah Kami</span>
                             <span class="material-symbols-outlined text-lg">arrow_downward</span>
                         </button>
                     </div>
                 </div>
             </div>
-            <!-- Team Section Header -->
             <div class="w-full max-w-[960px] px-4 pt-8 md:px-10">
                 <div class="flex flex-col gap-2 border-l-4 border-primary pl-4">
-                    <h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em]">The Alchemists</h2>
-                    <p class="text-secondary-text text-sm md:text-base">Meet the guild masters behind the formulations.
+                    <h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em]">Para Alkemis</h2>
+                    <p class="text-secondary-text text-sm md:text-base">Temui para master guild di balik formulasi kami.
                     </p>
                 </div>
             </div>
-            <!-- Team Grid -->
             <div class="w-full max-w-[960px] px-4 py-8 md:px-10">
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-                    <!-- Team Member 1 -->
                     <div class="group flex flex-col gap-4">
                         <div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-gray-800">
                             <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
@@ -155,7 +151,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- Team Member 2 -->
                     <div class="group flex flex-col gap-4">
                         <div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-gray-800">
                             <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
@@ -167,12 +162,11 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-white text-lg font-bold leading-normal">Salman M.A.</p>
+                            <p class="text-white text-lg font-bold leading-normal">Salman Maula Ash-Shidqi</p>
                             <p class="text-secondary-text text-sm font-medium uppercase tracking-wide">Brand Sorcerer
                             </p>
                         </div>
                     </div>
-                    <!-- Team Member 3 -->
                     <div class="group flex flex-col gap-4">
                         <div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-gray-800">
                             <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
@@ -184,12 +178,11 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-white text-lg font-bold leading-normal">Ghozi</p>
+                            <p class="text-white text-lg font-bold leading-normal">Ahmad Ghozi</p>
                             <p class="text-secondary-text text-sm font-medium uppercase tracking-wide">Chief Alchemist
                             </p>
                         </div>
                     </div>
-                    <!-- Team Member 4 -->
                     <div class="group flex flex-col gap-4">
                         <div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-gray-800">
                             <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
@@ -201,11 +194,11 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-white text-lg font-bold leading-normal">Fadil</p>
-                            <p class="text-secondary-text text-sm font-medium uppercase tracking-wide">Visual Mage</p>
+                            <p class="text-white text-lg font-bold leading-normal">Fadil Muhammad Zain</p>
+                            <p class="text-secondary-text text-sm font-medium uppercase tracking-wide">Penyihir Visual
+                            </p>
                         </div>
                     </div>
-                    <!-- Team Member 5 -->
                     <div class="group flex flex-col gap-4">
                         <div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-gray-800">
                             <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
@@ -218,11 +211,10 @@
                         </div>
                         <div>
                             <p class="text-white text-lg font-bold leading-normal">Reyhan</p>
-                            <p class="text-secondary-text text-sm font-medium uppercase tracking-wide">Shadow Operations
+                            <p class="text-secondary-text text-sm font-medium uppercase tracking-wide">Operasi Bayangan
                             </p>
                         </div>
                     </div>
-                    <!-- Team Member 6 -->
                     <div class="group flex flex-col gap-4">
                         <div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl bg-gray-800">
                             <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
@@ -234,36 +226,34 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-white text-lg font-bold leading-normal">Elias M.</p>
-                            <p class="text-secondary-text text-sm font-medium uppercase tracking-wide">Product Warlock
+                            <p class="text-white text-lg font-bold leading-normal">Fulan</p>
+                            <p class="text-secondary-text text-sm font-medium uppercase tracking-wide">Warlock Produk
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- CTA Section -->
             <div class="w-full bg-[#110a15] mt-12 border-t border-[#332839]">
                 <div
                     class="mx-auto flex max-w-[960px] flex-col items-center justify-center gap-6 px-4 py-16 md:px-10 md:py-24 text-center">
                     <span class="material-symbols-outlined text-6xl text-primary animate-pulse">hotel_class</span>
                     <div class="flex flex-col gap-4 max-w-[600px]">
                         <h1 class="text-white text-3xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
-                            Join the Coven
+                            Bergabung dengan Coven
                         </h1>
                         <p class="text-secondary-text text-lg font-normal leading-relaxed">
-                            Unlock your true face. Our potions are limited, and the night is young.
+                            Buka wajah sejatimu. Ramuan kami terbatas, dan malam masih muda.
                         </p>
                     </div>
                     <div class="flex w-full justify-center pt-4">
                         <button
                             class="flex min-w-[200px] cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-lg h-14 px-8 bg-primary hover:bg-[#7a0eb0] transition-all text-white text-lg font-bold leading-normal tracking-[0.015em] shadow-[0_0_20px_rgba(147,17,212,0.3)] hover:shadow-[0_0_30px_rgba(147,17,212,0.5)]">
-                            <span>Shop Potions</span>
+                            <span>Beli Ramuan</span>
                             <span class="material-symbols-outlined">arrow_forward</span>
                         </button>
                     </div>
                 </div>
             </div>
-            <!-- Footer -->
             <footer class="w-full border-t border-[#332839] bg-background-dark px-4 py-8 md:px-10">
                 <div class="mx-auto flex max-w-[960px] flex-col md:flex-row justify-between items-center gap-4">
                     <div class="flex items-center gap-2 text-white opacity-80">
@@ -272,9 +262,9 @@
                     </div>
                     <div class="flex gap-6">
                         <a class="text-secondary-text hover:text-white text-sm transition-colors"
-                            href="#">Privacy</a>
+                            href="#">Privasi</a>
                         <a class="text-secondary-text hover:text-white text-sm transition-colors"
-                            href="#">Terms</a>
+                            href="#">Syarat &amp; Ketentuan</a>
                         <a class="text-secondary-text hover:text-white text-sm transition-colors"
                             href="#">Instagram</a>
                     </div>
