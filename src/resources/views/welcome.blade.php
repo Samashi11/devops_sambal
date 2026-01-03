@@ -84,10 +84,10 @@
                                     <a class="text-gray-300 hover:text-primary transition-colors text-sm font-medium leading-normal"
                                         href="{{ route('contact') }}">Contact</a>
                                 </div>
-                                <button
-                                    class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary/90 transition-all text-white text-sm font-bold leading-normal tracking-[0.015em] shadow-[0_0_15px_rgba(147,17,212,0.4)]">
-                                    <span class="truncate">Shop Collection</span>
-                                </button>
+                                <a href="https://wa.me/081318288133"><button
+                                        class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary/90 transition-all text-white text-sm font-bold leading-normal tracking-[0.015em] shadow-[0_0_15px_rgba(147,17,212,0.4)]">
+                                        <span class="truncate">Shop Collection</span>
+                                    </button></a>
                             </div>
                         </header>
                     </div>
@@ -114,23 +114,23 @@
                                 <div class="flex flex-col gap-4 text-center z-10 max-w-2xl">
                                     <div class="flex justify-center mb-2">
                                         <span
-                                            class="px-3 py-1 rounded-full bg-[#332839] text-primary text-xs font-bold uppercase tracking-widest border border-primary/30">Alchemical
-                                            Grooming</span>
+                                            class="px-3 py-1 rounded-full bg-[#332839] text-primary text-xs font-bold uppercase tracking-widest border border-primary/30">Perawatan
+                                            Alkemis</span>
                                     </div>
                                     <h1
                                         class="text-white text-5xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl glow-text">
-                                        Lepaskan Cahaya Gelapmu
+                                        Unleash Your Darkest Glow
                                     </h1>
                                     <h2 class="text-gray-300 text-lg font-normal leading-relaxed max-w-lg mx-auto">
-                                        Transform your daily routine into a ritual of power. Premium skincare and
-                                        grooming essentials for the modern mage.
+                                        Ubah rutinitas harianmu menjadi ritual penuh kekuatan. Perawatan kulit premium
+                                        dan kebutuhan grooming untuk penyihir modern.
                                     </h2>
                                 </div>
                                 <div class="flex flex-col sm:flex-row gap-4 z-10 mt-4">
-                                    <button
-                                        class="flex min-w-[320px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary hover:bg-primary/90 hover:scale-105 transition-all text-white text-base font-bold leading-normal tracking-[0.015em] shadow-[0_0_20px_rgba(147,17,212,0.5)]">
-                                        <span class="truncate">Shop Collection</span>
-                                    </button>
+                                    <a href="https://wa.me/081318288133"><button
+                                            class="flex min-w-[320px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary hover:bg-primary/90 hover:scale-105 transition-all text-white text-base font-bold leading-normal tracking-[0.015em] shadow-[0_0_20px_rgba(147,17,212,0.5)]">
+                                            <span class="truncate">Shop Collections</span>
+                                        </button></a>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                     <h2
                         class="text-white text-[28px] font-bold leading-tight tracking-[-0.015em] px-4 pb-6 pt-5 flex items-center gap-3">
                         <span class="material-symbols-outlined text-primary">science</span>
-                        The Apothecary
+                        Sang Apoteker
                     </h2>
                 </div>
             </div>
@@ -155,10 +155,10 @@
                     <div class="flex flex-col gap-10 px-4 py-10 @container">
                         <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
                             <h1 class="text-white tracking-tight text-[32px] font-bold leading-tight max-w-[600px]">
-                                Potions for the Modern Era
+                                Ramuan untuk Era Modern
                             </h1>
-                            <p class="text-gray-400 max-w-xs text-sm">Crafted with rare ingredients to purify,
-                                invigorate, and enchant your physical form.</p>
+                            <p class="text-gray-400 max-w-xs text-sm">Dibuat dengan bahan-bahan langka untuk memurnikan,
+                                menyegarkan, dan mempesona wujud fisikmu.</p>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div
@@ -169,9 +169,9 @@
                                 </div>
                                 <div class="flex flex-col gap-3">
                                     <h2 class="text-white text-xl font-bold leading-tight">Void Facewash</h2>
-                                    <p class="text-[#b09db9] text-sm font-normal leading-relaxed">Activated charcoal
-                                        meets volcanic ash to purge impurities from the deep, leaving skin matte and
-                                        mysterious.</p>
+                                    <p class="text-[#b09db9] text-sm font-normal leading-relaxed">Arang aktif bertemu
+                                        abu vulkanik untuk membersihkan kotoran dari kedalaman pori, meninggalkan kulit
+                                        matte dan misterius.</p>
                                 </div>
                             </div>
                             <div
@@ -182,9 +182,9 @@
                                 </div>
                                 <div class="flex flex-col gap-3">
                                     <h2 class="text-white text-xl font-bold leading-tight">Mystic Moisturizer</h2>
-                                    <p class="text-[#b09db9] text-sm font-normal leading-relaxed">Lightweight hydration
-                                        infused with night-blooming jasmine and peptides. Vanishes instantly, leaving
-                                        power behind.</p>
+                                    <p class="text-[#b09db9] text-sm font-normal leading-relaxed">Hidrasi ringan yang
+                                        diinfus dengan melati malam dan peptida. Meresap seketika, meninggalkan kekuatan
+                                        di baliknya.</p>
                                 </div>
                             </div>
                             <div
@@ -195,9 +195,9 @@
                                 </div>
                                 <div class="flex flex-col gap-3">
                                     <h2 class="text-white text-xl font-bold leading-tight">Shadow Beard Oil</h2>
-                                    <p class="text-[#b09db9] text-sm font-normal leading-relaxed">A potent blend of
-                                        argan and jojoba oils to tame the wildest mane, scented with dark musk and
-                                        sandalwood.</p>
+                                    <p class="text-[#b09db9] text-sm font-normal leading-relaxed">Campuran kuat minyak
+                                        argan dan jojoba untuk menjinakkan rambut liar, dengan aroma musk gelap dan
+                                        cendana.</p>
                                 </div>
                             </div>
                         </div>
@@ -219,25 +219,25 @@
                                     <div
                                         class="flex items-center gap-2 text-primary font-bold tracking-widest uppercase text-xs">
                                         <span class="w-8 h-[1px] bg-primary"></span>
-                                        About Us
+                                        Tentang Kami
                                     </div>
                                     <h1
                                         class="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-5xl">
-                                        The Alchemy
+                                        Sang Alkemis
                                     </h1>
                                     <p class="text-gray-300 text-base font-normal leading-relaxed">
-                                        We are not merely a brand; we are a collective of grooming warlocks dedicated to
-                                        pushing the boundaries of men's self-care.
+                                        Kami bukan sekadar merek; kami adalah kumpulan penyihir grooming yang
+                                        berdedikasi untuk mendobrak batas perawatan diri pria.
                                     </p>
                                     <p class="text-gray-400 text-sm font-normal leading-relaxed">
-                                        Forged in the shadows, Dark Mage emerged with a single purpose: to fight the
-                                        tyranny of dull skin and generic products. We believe every man possesses a
-                                        unique magic waiting to be unleashed through the right ritual.
+                                        Ditempa dalam bayang-bayang, Dark Mage muncul dengan satu tujuan: melawan tirani
+                                        kulit kusam dan produk generik. Kami percaya setiap pria memiliki sihir unik
+                                        yang menunggu untuk dilepaskan melalui ritual yang tepat.
                                     </p>
                                 </div>
                                 <button
                                     class="group flex w-fit cursor-pointer items-center gap-2 text-primary text-base font-bold leading-normal tracking-[0.015em] hover:text-white transition-colors mt-2">
-                                    <span>Learn Our Story</span>
+                                    <span>Pelajari Kisah Kami</span>
                                     <span
                                         class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
                                 </button>
@@ -251,17 +251,17 @@
             <div class="absolute inset-0 bg-primary/5 z-0"></div>
             <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-20 z-10">
                 <div class="layout-content-container flex flex-col max-w-[960px] flex-1 items-center text-center">
-                    <h2 class="text-white text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-6">Ready to
-                        cast your spell?</h2>
-                    <p class="text-gray-300 max-w-xl text-lg mb-10">Join the Dark Mage circle for grooming secrets,
-                        exclusive drops, and magical discounts.</p>
+                    <h2 class="text-white text-3xl md:text-5xl font-bold leading-tight tracking-tight mb-6">Siap
+                        merapal manteramu?</h2>
+                    <p class="text-gray-300 max-w-xl text-lg mb-10">Bergabunglah dengan lingkaran Dark Mage untuk
+                        rahasia grooming, rilisan eksklusif, dan diskon ajaib.</p>
                     <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
                         <input
                             class="bg-[#1e1621] border border-[#4b3b54] text-white rounded-lg px-6 py-3 w-full sm:w-80 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary placeholder-gray-500"
-                            placeholder="Enter your email address..." type="email" />
+                            placeholder="Masukkan alamat emailmu..." type="email" />
                         <button
                             class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-lg shadow-[0_0_20px_rgba(147,17,212,0.4)] transition-all">
-                            Join the Circle
+                            Gabung Lingkaran
                         </button>
                     </div>
                 </div>
@@ -279,10 +279,10 @@
                                 <span class="text-white text-xl font-bold">Dark Mage</span>
                             </div>
                             <div class="flex gap-8 text-sm font-medium text-gray-400">
-                                <a class="hover:text-primary transition-colors" href="#">Shop</a>
-                                <a class="hover:text-primary transition-colors" href="#">Rituals</a>
-                                <a class="hover:text-primary transition-colors" href="#">Ingredients</a>
-                                <a class="hover:text-primary transition-colors" href="#">Contact</a>
+                                <a class="hover:text-primary transition-colors" href="#">Belanja</a>
+                                <a class="hover:text-primary transition-colors" href="#">Ritual</a>
+                                <a class="hover:text-primary transition-colors" href="#">Bahan</a>
+                                <a class="hover:text-primary transition-colors" href="#">Kontak</a>
                             </div>
                             <div class="flex gap-4">
                                 <a class="text-gray-500 hover:text-white transition-colors" href="#">
@@ -304,7 +304,7 @@
                             </div>
                         </div>
                         <div class="mt-8 pt-8 border-t border-[#332839] text-center text-xs text-gray-600">
-                            © 2023 Dark Mage Grooming. All rights reserved.
+                            © 2023 Dark Mage Grooming. Hak cipta dilindungi undang-undang.
                         </div>
                     </div>
                 </div>
