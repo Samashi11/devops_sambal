@@ -117,40 +117,54 @@
                         Anda dalam perjalanan Anda.
                     </p>
                 </div>
-                <form class="flex flex-col gap-5">
-                    <div class="flex flex-col md:flex-row gap-5">
-                        <label class="flex flex-col flex-1">
-                            <p class="text-white text-sm font-medium leading-normal pb-2 ml-1">Nama</p>
-                            <input
-                                class="form-input w-full rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-dark bg-surface-dark focus:border-primary h-14 placeholder:text-[#b09db9]/50 px-4 text-base transition-all"
-                                placeholder="Masukkan nama Anda" type="text" />
-                        </label>
-                        <label class="flex flex-col flex-1">
-                            <p class="text-white text-sm font-medium leading-normal pb-2 ml-1">Alamat Email</p>
-                            <input
-                                class="form-input w-full rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-dark bg-surface-dark focus:border-primary h-14 placeholder:text-[#b09db9]/50 px-4 text-base transition-all"
-                                placeholder="Masukkan email Anda" type="email" />
-                        </label>
-                    </div>
-                    <label class="flex flex-col w-full">
-                        <p class="text-white text-sm font-medium leading-normal pb-2 ml-1">Perihal</p>
-                        <input
-                            class="form-input w-full rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-dark bg-surface-dark focus:border-primary h-14 placeholder:text-[#b09db9]/50 px-4 text-base transition-all"
-                            placeholder="Mengenai apa pesan ini?" type="text" />
+                <form class="flex flex-col gap-5" method="POST" action="/contact/send">
+                    @csrf
+                    <!-- Nama -->
+                    <label class="flex flex-col flex-1">
+                        <p class="text-white text-sm font-medium pb-2 ml-1">Nama</p>
+                        <input name="name" type="text" required aria-label="Nama pengirim"
+                            placeholder="Masukkan nama Anda"
+                            class="form-input w-full rounded-lg text-white bg-surface-dark border border-border-dark h-14 px-4" />
                     </label>
-                    <label class="flex flex-col w-full">
-                        <p class="text-white text-sm font-medium leading-normal pb-2 ml-1">Pesan</p>
-                        <textarea
-                            class="form-textarea w-full rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-dark bg-surface-dark focus:border-primary min-h-[160px] placeholder:text-[#b09db9]/50 p-4 text-base resize-y transition-all"
-                            placeholder="Tuliskan mantra Anda di sini..."></textarea>
+
+                    <!-- Email -->
+                    <label class="flex flex-col flex-1">
+                        <p class="text-white text-sm font-medium pb-2 ml-1">Alamat Email</p>
+                        <input name="email" type="email" required aria-label="Email pengirim"
+                            placeholder="Masukkan email Anda"
+                            class="form-input w-full rounded-lg text-white bg-surface-dark border border-border-dark h-14 px-4" />
                     </label>
-                    <button
-                        class="mt-2 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-4 bg-primary hover:bg-[#a61ce5] text-white text-base font-bold leading-normal tracking-[0.015em] transition-all shadow-[0_0_20px_rgba(147,17,212,0.3)] hover:shadow-[0_0_30px_rgba(147,17,212,0.5)]"
-                        type="button">
-                        <span class="mr-2">Kirim Pesan</span>
-                        <span class="material-symbols-outlined text-lg">auto_awesome</span>
+
+                    <!-- Subject -->
+                    <label class="flex flex-col w-full">
+                        <p class="text-white text-sm font-medium pb-2 ml-1">Perihal</p>
+                        <input name="subject" type="text" required aria-label="Subjek pesan"
+                            placeholder="Mengenai apa pesan ini?"
+                            class="form-input w-full rounded-lg text-white bg-surface-dark border border-border-dark h-14 px-4" />
+                    </label>
+
+                    <!-- Message -->
+                    <label class="flex flex-col w-full">
+                        <p class="text-white text-sm font-medium pb-2 ml-1">Pesan</p>
+                        <textarea name="message" required aria-label="Isi pesan" placeholder="Tuliskan pesan Anda di sini..."
+                            class="form-textarea w-full rounded-lg text-white bg-surface-dark border border-border-dark min-h-[160px] p-4 resize-y"></textarea>
+                    </label>
+
+                    <!-- Honeypot (anti-spam, disembunyikan via CSS) -->
+                    <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" />
+
+                    <button type="submit"
+                        class="mt-2 flex w-full items-center justify-center rounded-lg h-14 bg-primary text-white font-bold">
+                        Kirim Pesan
                     </button>
+                    @if (session('success'))
+                        <p class="text-green-400 text-sm mt-2">
+                            {{ session('success') }}
+                        </p>
+                    @endif
+
                 </form>
+
                 <div class="mt-10 pt-8 border-t border-[#332839] grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="flex items-start gap-4">
                         <div
@@ -159,17 +173,23 @@
                         </div>
                         <div>
                             <p class="text-white font-bold mb-1">Email Kami</p>
-                            <p class="text-[#b09db9] text-sm">support@darkmage.com</p>
+                            <p class="text-[#b09db9] text-sm"><a
+                                    href="mailto:info@darkmage.my.id">info@darkmage.my.id</a></p>
                         </div>
                     </div>
                     <div class="flex items-start gap-4">
+
                         <div
                             class="size-10 rounded-full bg-surface-dark border border-border-dark flex items-center justify-center text-primary shrink-0">
-                            <span class="material-symbols-outlined">location_on</span>
+                            <span class="material-symbols-outlined">send</span>
                         </div>
                         <div>
-                            <p class="text-white font-bold mb-1">Markas Kami</p>
-                            <p class="text-[#b09db9] text-sm">888 Shadow Lane, Nocturnia</p>
+                            <a
+                                href="https://wa.me/+6289507392244?text=Halo%20Tim%20Dark%20Mage,%20saya%20ingin%20bertanya%20tentang%20produk%20Anda.">
+                                <p class="text-white font-bold mb-1">Whatsapp Kami</p>
+                                <p class="text-[#b09db9] text-sm">+62 895-0739-2244
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -178,7 +198,7 @@
     </main>
     <footer class="border-t border-[#332839] bg-[#161118] py-8">
         <div class="flex flex-col md:flex-row justify-center items-center gap-6 text-[#b09db9] text-sm">
-            <p>© 2023 Dark Mage. Hak cipta dilindungi undang-undang.</p>
+            <p>© 2026 Dark Mage. Hak cipta dilindungi undang-undang.</p>
             <div class="flex gap-6">
                 <a class="hover:text-white transition-colors" href="#">Kebijakan Privasi</a>
                 <a class="hover:text-white transition-colors" href="#">Syarat Layanan</a>

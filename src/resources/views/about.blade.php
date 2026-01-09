@@ -226,7 +226,7 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-white text-lg font-bold leading-normal">Fulan</p>
+                            <p class="text-white text-lg font-bold leading-normal">Faisa Al Farrel</p>
                             <p class="text-secondary-text text-sm font-medium uppercase tracking-wide">Warlock Produk
                             </p>
                         </div>
@@ -258,7 +258,7 @@
                 <div class="mx-auto flex max-w-[960px] flex-col md:flex-row justify-between items-center gap-4">
                     <div class="flex items-center gap-2 text-white opacity-80">
                         <span class="material-symbols-outlined text-xl">cruelty_free</span>
-                        <span class="text-sm font-medium">© 2023 Dark Mage Beauty</span>
+                        <span class="text-sm font-medium">© 2026 Dark Mage Beauty</span>
                     </div>
                     <div class="flex gap-6">
                         <a class="text-secondary-text hover:text-white text-sm transition-colors"

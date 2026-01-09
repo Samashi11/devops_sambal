@@ -304,7 +304,7 @@
                             </div>
                         </div>
                         <div class="mt-8 pt-8 border-t border-[#332839] text-center text-xs text-gray-600">
-                            © 2023 Dark Mage Grooming. Hak cipta dilindungi undang-undang.
+                            © 2026 Dark Mage Grooming. Hak cipta dilindungi undang-undang.
                         </div>
                     </div>
                 </div>

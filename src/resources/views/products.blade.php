@@ -409,7 +409,7 @@
         </div>
         <div
             class="max-w-[1440px] mx-auto pt-8 border-t border-surface-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-            <p>© 2023 Dark Mage Grooming Co. Hak cipta dilindungi undang-undang.</p>
+            <p>© 2026 Dark Mage Grooming Co. Hak cipta dilindungi undang-undang.</p>
             <div class="flex gap-6">
                 <a class="hover:text-white transition-colors" href="#">Kebijakan Privasi</a>
                 <a class="hover:text-white transition-colors" href="#">Syarat Layanan</a>
