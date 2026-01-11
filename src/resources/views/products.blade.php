@@ -68,9 +68,9 @@
                 <a class="text-white text-sm font-medium hover:text-primary transition-colors"
                     href="{{ url('/') }}">Home</a>
                 <a class="text-white text-sm font-medium hover:text-primary transition-colors"
-                    href="{{ route('about') }}">About Us</a>
+                    href="{{ route('about') }}">Tentang Kami</a>
                 <a class="text-white text-sm font-medium hover:text-primary transition-colors"
-                    href="{{ route('contact') }}">Contact</a>
+                    href="{{ route('contact') }}">Kontak</a>
             </div>
             <div class="flex gap-2">
                 <button
@@ -217,7 +217,7 @@
                                 <button
                                     class="w-full flex items-center justify-center gap-2 rounded-lg h-10 bg-primary hover:bg-primary/90 text-white text-sm font-bold transition-all active:scale-[0.98]">
                                     <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
-                                    Tambahkan ke Grimoire
+                                    Tambahkan ke Keranjang
                                 </button>
                             </div>
                         </div>
@@ -241,7 +241,7 @@
                                 <button
                                     class="w-full flex items-center justify-center gap-2 rounded-lg h-10 bg-surface-border hover:bg-surface-border/80 text-white text-sm font-bold transition-all active:scale-[0.98]">
                                     <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
-                                    Tambahkan ke Grimoire
+                                    Tambahkan ke Keranjang
                                 </button>
                             </div>
                         </div>
@@ -265,7 +265,7 @@
                                 <button
                                     class="w-full flex items-center justify-center gap-2 rounded-lg h-10 bg-surface-border hover:bg-surface-border/80 text-white text-sm font-bold transition-all active:scale-[0.98]">
                                     <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
-                                    Tambahkan ke Grimoire
+                                    Tambahkan ke Keranjang
                                 </button>
                             </div>
                         </div>
@@ -292,7 +292,7 @@
                                 <button
                                     class="w-full flex items-center justify-center gap-2 rounded-lg h-10 bg-surface-border hover:bg-surface-border/80 text-white text-sm font-bold transition-all active:scale-[0.98]">
                                     <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
-                                    Tambahkan ke Grimoire
+                                    Tambahkan ke Keranjang
                                 </button>
                             </div>
                         </div>
@@ -316,7 +316,7 @@
                                 <button
                                     class="w-full flex items-center justify-center gap-2 rounded-lg h-10 bg-surface-border hover:bg-surface-border/80 text-white text-sm font-bold transition-all active:scale-[0.98]">
                                     <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
-                                    Tambahkan ke Grimoire
+                                    Tambahkan ke Keranjang
                                 </button>
                             </div>
                         </div>
@@ -340,7 +340,7 @@
                                 <button
                                     class="w-full flex items-center justify-center gap-2 rounded-lg h-10 bg-surface-border hover:bg-surface-border/80 text-white text-sm font-bold transition-all active:scale-[0.98]">
                                     <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
-                                    Tambahkan ke Grimoire
+                                    Tambahkan ke Keranjang
                                 </button>
                             </div>
                         </div>
@@ -396,7 +396,7 @@
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-4">Bergabung dengan Coven</h4>
+                <h4 class="text-white font-bold mb-4">Bergabung dengan Darkmage</h4>
                 <p class="text-gray-400 text-sm mb-4">Berlangganan untuk mantra eksklusif dan peluncuran produk.</p>
                 <div class="flex gap-2">
                     <input

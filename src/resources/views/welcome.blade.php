@@ -78,15 +78,15 @@
                             <div class="flex flex-1 justify-end gap-8 items-center">
                                 <div class="hidden md:flex items-center gap-9">
                                     <a class="text-gray-300 hover:text-primary transition-colors text-sm font-medium leading-normal"
-                                        href="{{ route('products') }}">Shop</a>
+                                        href="{{ route('products') }}">Toko</a>
                                     <a class="text-gray-300 hover:text-primary transition-colors text-sm font-medium leading-normal"
-                                        href="{{ route('about') }}">About Us</a>
+                                        href="{{ route('about') }}">Tentang Kami</a>
                                     <a class="text-gray-300 hover:text-primary transition-colors text-sm font-medium leading-normal"
-                                        href="{{ route('contact') }}">Contact</a>
+                                        href="{{ route('contact') }}">Kontak</a>
                                 </div>
                                 <a href="https://wa.me/081318288133"><button
                                         class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary/90 transition-all text-white text-sm font-bold leading-normal tracking-[0.015em] shadow-[0_0_15px_rgba(147,17,212,0.4)]">
-                                        <span class="truncate">Shop Collection</span>
+                                        <span class="truncate">Toko Koleksi</span>
                                     </button></a>
                             </div>
                         </header>
@@ -119,7 +119,7 @@
                                     </div>
                                     <h1
                                         class="text-white text-5xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl glow-text">
-                                        Unleash Your Darkest Glow
+                                        Lepaskan Cahaya Wajahmu
                                     </h1>
                                     <h2 class="text-gray-300 text-lg font-normal leading-relaxed max-w-lg mx-auto">
                                         Ubah rutinitas harianmu menjadi ritual penuh kekuatan. Perawatan kulit premium
@@ -129,7 +129,7 @@
                                 <div class="flex flex-col sm:flex-row gap-4 z-10 mt-4">
                                     <a href="https://wa.me/081318288133"><button
                                             class="flex min-w-[320px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary hover:bg-primary/90 hover:scale-105 transition-all text-white text-base font-bold leading-normal tracking-[0.015em] shadow-[0_0_20px_rgba(147,17,212,0.5)]">
-                                            <span class="truncate">Shop Collections</span>
+                                            <span class="truncate">Toko Koleksi</span>
                                         </button></a>
                                 </div>
                             </div>

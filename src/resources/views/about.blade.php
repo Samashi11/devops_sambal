@@ -78,15 +78,16 @@
                 <nav class="hidden md:flex items-center gap-8">
                     <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
                         href="{{ url('/') }}">Home</a>
-                    <a class="text-sm font-medium leading-normal text-primary" href="{{ route('products') }}">Shop</a>
+                    <a class="text-sm font-medium leading-normal text-primary" href="{{ route('products') }}">Toko</a>
                     <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
-                        href="{{ route('contact') }}">Contact</a>
+                        href="{{ route('contact') }}">Kontak</a>
                 </nav>
                 <div class="flex items-center gap-4">
-                    <button
-                        class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-[#7a0eb0] transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
-                        <span class="truncate">Shop Potions</span>
-                    </button>
+                    <a href="{{ route('products') }}">
+                        <button
+                            class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-[#7a0eb0] transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                            <span class="truncate">Toko</span>
+                        </button></a>
                     <!-- Mobile Menu Icon -->
                     <button class="md:hidden text-white">
                         <span class="material-symbols-outlined">menu</span>
@@ -239,7 +240,7 @@
                     <span class="material-symbols-outlined text-6xl text-primary animate-pulse">hotel_class</span>
                     <div class="flex flex-col gap-4 max-w-[600px]">
                         <h1 class="text-white text-3xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
-                            Bergabung dengan Coven
+                            Bergabung dengan Darkmage
                         </h1>
                         <p class="text-secondary-text text-lg font-normal leading-relaxed">
                             Buka wajah sejatimu. Ramuan kami terbatas, dan malam masih muda.
@@ -249,7 +250,8 @@
                         <button
                             class="flex min-w-[200px] cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-lg h-14 px-8 bg-primary hover:bg-[#7a0eb0] transition-all text-white text-lg font-bold leading-normal tracking-[0.015em] shadow-[0_0_20px_rgba(147,17,212,0.3)] hover:shadow-[0_0_30px_rgba(147,17,212,0.5)]">
                             <span>Beli Ramuan</span>
-                            <span class="material-symbols-outlined">arrow_forward</span>
+                            <span
+                                class="material-symbols-osssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssutlined">arrow_forward</span>
                         </button>
                     </div>
                 </div>
