@@ -78,9 +78,9 @@
                 <a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
                     href="{{ url('/') }}">Home</a>
                 <a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
-                    href="{{ route('products') }}">Shop</a>
+                    href="{{ route('products') }}">Toko</a>
                 <a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
-                    href="{{ route('about') }}">About Us</a>
+                    href="{{ route('about') }}">Tentang Kami</a>
             </div>
             <button
                 class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
@@ -111,7 +111,7 @@
                 <div class="mb-8">
                     <p class="text-primary text-sm font-bold tracking-wider uppercase mb-2">Hubungi Dukungan</p>
                     <h1 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] mb-4">
-                        CONTACT US</h1>
+                        HUBUNGI KAMI</h1>
                     <p class="text-[#b09db9] text-lg font-normal leading-relaxed">
                         Ada pertanyaan tentang pesanan Anda atau formula alkimia kami? Tim penyihir kami siap membantu
                         Anda dalam perjalanan Anda.
