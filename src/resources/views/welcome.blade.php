@@ -212,7 +212,7 @@
                         <div class="flex flex-col gap-10 px-4 py-16 md:flex-row items-center">
                             <div class="w-full md:w-1/2 bg-center bg-no-repeat aspect-square md:aspect-[4/3] bg-cover rounded-xl shadow-2xl shadow-primary/10 border border-[#332839]"
                                 data-alt="Abstract 3D render of a glowing purple crystal structure"
-                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANEvZ0PzqC2CKusUVHglF77jpk9OxorR6HaXQdDvPGmiTpudHeyRBzHQmpNGT_UQOLo1RIY-j3-xkPtvXZ6rmiA3Kp5z_Tdf0ACx_WQ2rJf4sY67-qskj2N7nISTg_zZJoT0Uy6q5Hkb1knhIlks_DcDfDjUdssvJozoQN1Gxel4DF9ITCstQ6UrRWtu-wQU2oUY-sU9ymPFxtnQNRVGTVeLyZlNQrnHudzFcyuisKqLtLfdPYsxotAd7aS4eJw5VzbhBY9P6GFc8W");'>
+                                style='background-image: url("https://img.freepik.com/foto-gratis/pemandangan-pegunungan-dengan-kabut_1150-18327.jpg?semt=ais_hybrid&w=740&q=80");'>
                             </div>
                             <div class="flex flex-col gap-6 md:w-1/2 md:pl-8">
                                 <div class="flex flex-col gap-4 text-left">
