@@ -251,7 +251,7 @@
                             class="flex min-w-[200px] cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-lg h-14 px-8 bg-primary hover:bg-[#7a0eb0] transition-all text-white text-lg font-bold leading-normal tracking-[0.015em] shadow-[0_0_20px_rgba(147,17,212,0.3)] hover:shadow-[0_0_30px_rgba(147,17,212,0.5)]">
                             <span>Beli Ramuan</span>
                             <span
-                                class="material-symbols-osssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssutlined">arrow_forward</span>
+                                class="material-symbols-outlined">arrow_forward</span>
                         </button>
                     </div>
                 </div>
