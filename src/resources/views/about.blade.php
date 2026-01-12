@@ -78,7 +78,7 @@
                 <nav class="hidden md:flex items-center gap-8">
                     <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
                         href="{{ url('/') }}">Home</a>
-                    <a class="text-sm font-medium leading-normal text-primary" href="{{ route('products') }}">Toko</a>
+                    <a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="{{ route('products') }}">Toko</a>
                     <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
                         href="{{ route('contact') }}">Kontak</a>
                 </nav>
